@@ -1,0 +1,110 @@
+/* Dark theme minimal styles */
+:root{
+  --bg:#0b0f12;
+  --card:#0f1417;
+  --muted:#aab3b8;
+  --accent:#7dd3fc;
+  --link:#7dd3fc;
+  --link-visited:#60a5d8;
+  --text:#e6eef2;
+}
+/* link colors for readability */
+a{color:var(--link);text-decoration:underline dotted}
+a:visited{color:var(--link-visited)}
+a:hover,a:focus{color:var(--accent);text-decoration:underline}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.container{max-width:880px;margin:0 auto;padding:24px}
+.site-header{border-bottom:1px solid rgba(255,255,255,0.04);}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.site-title{margin:0;font-size:1.25rem}
+.site-header nav a{color:var(--link);text-decoration:none;margin-left:16px}
+.site-header nav a:hover{color:var(--text)}
+.hero{padding:48px 0}
+.hero h2{margin:0 0 8px 0;font-size:2rem}
+.tagline{color:var(--muted);margin:0 0 16px 0}
+.cta{display:inline-block;padding:10px 14px;background:var(--text);color:var(--bg);border-radius:6px;text-decoration:none;font-weight:600}
+.cta:hover,.cta:focus{background:#dff7fb;outline:2px solid rgba(125,211,252,0.18);outline-offset:2px}
+.intro h3{margin-top:24px}
+.projects-list{list-style:none;padding:0;margin:0}
+.projects-list li{background:var(--card);padding:14px;border-radius:8px;margin:12px 0}
+.site-footer{border-top:1px solid rgba(255,255,255,0.04);padding:18px 0;margin-top:36px;color:var(--muted);text-align:center}
+@media (max-width:600px){.site-header .container{flex-direction:column;align-items:flex-start}.site-header nav{margin-top:8px}.hero h2{font-size:1.5rem}}
+
+/* system / log styles */
+.sysbox{background:#091019;border:1px solid rgba(255,255,255,0.03);padding:14px;border-radius:8px;margin:18px 0;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,monospace}
+.sysmeta{color:var(--muted);font-size:0.95rem;margin-bottom:8px}
+.syslog{background:#04060a;color:#bcd;padding:12px;border-radius:6px;overflow:auto;max-height:160px;font-size:0.85rem}
+.note{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:10px;border-radius:6px;margin-top:10px}
+.small{font-size:0.9rem}
+.muted{color:var(--muted)}
+
+/* gallery */
+.gallery-grid{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px;align-items:flex-start}
+.gallery-grid figure{background:var(--card);padding:8px;border-radius:8px;display:block;flex:0 0 auto;overflow:hidden}
+.gallery-grid img,.gallery-grid video{border-radius:4px;display:block;object-fit:contain}
+.gallery-grid img{image-rendering: pixelated;image-rendering: crisp-edges;-ms-interpolation-mode: nearest-neighbor}
+.gallery-grid figcaption{color:var(--muted);font-size:0.85rem;margin-top:8px;text-align:center}
+
+/* Responsive tweaks */
+/* container padding and readable type on small screens */
+@media (max-width:900px){
+  .container{padding:18px}
+  .hero h2{font-size:1.6rem}
+}
+@media (max-width:600px){
+  .container{padding:14px}
+  .site-header .container{flex-direction:column;align-items:flex-start}
+  .site-header nav{margin-top:10px}
+  .site-header nav a{padding:8px 10px;margin-left:0}
+  .hero h2{font-size:1.4rem}
+  .tagline{font-size:0.95rem}
+  .gallery-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+  .syslog{max-height:120px}
+}
+@media (max-width:420px){
+  .container{padding:12px}
+  .hero h2{font-size:1.2rem}
+  .gallery-grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
+}
+
+/* header/nav improvements for touch and wrapping */
+.site-header nav{display:flex;gap:10px;flex-wrap:wrap}
+.site-header nav a{color:var(--link);text-decoration:none;padding:6px 8px;border-radius:6px}
+.site-header nav a:hover{color:var(--text);background:rgba(255,255,255,0.02)}
+
+/* ensure media elements fit their grid cells */
+.gallery-grid img,.gallery-grid video{width:100%;height:auto;display:block;object-fit:contain}
+.gallery-grid video{max-height:240px}
+
+/* make sysbox and notes adapt */
+.sysbox{padding:12px}
+.syslog{font-size:0.82rem}
+
+/* Project card utilities */
+.projects-list li{transition:transform .12s ease,box-shadow .12s ease}
+.projects-list li:hover{transform:translateY(-6px);box-shadow:0 8px 24px rgba(0,0,0,0.45)}
+.project-title{margin:0 0 6px 0}
+.project-title a{color:var(--text);text-decoration:none}
+.project-title a:hover{color:var(--accent);text-decoration:underline}
+.project-desc{margin:0 0 8px}
+.project-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.status-pill{background:var(--accent);color:var(--bg);padding:4px 8px;border-radius:999px;font-size:.85rem}
+.status-live{background:#4ade80;color:var(--bg)}
+.status-ongoing{background:var(--accent);color:var(--bg)}
+.status-education{background:#a78bfa;color:var(--bg)}
+.status-experimental{background:#fb923c;color:var(--bg)}
+.status-operational{background:#06b6d4;color:var(--bg)}
+.status-consulting{background:#f59e0b;color:var(--bg)}
+.status-tooling{background:#6366f1;color:var(--bg)}
+.project-links{margin-left:auto;display:flex;gap:8px}
+.project-links a{color:var(--link);text-decoration:none;padding:6px;border-radius:6px}
+.project-links a:hover{color:var(--text);background:rgba(255,255,255,0.02)}
+
+@media (max-width:600px){
+  .project-meta{flex-direction:column;align-items:flex-start}
+  .project-links{margin-left:0}
+  .projects-list li{padding:12px}
+}
+

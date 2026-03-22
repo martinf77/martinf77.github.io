@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About - martinf77</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">About</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <section>
+        <h2>About me</h2>
+        <p>I keep systems running - servers, automation and small scripts that reduce manual work. I aim for reliable, maintainable solutions, favour clear logging and predictable behavior, and try to avoid unnecessary complexity.</p>
+      </section>
+
+      <section>
+        <h3>Journey</h3>
+        <p>I started my IT journey in elementary school, making game projects on <a href="https://scratch.mit.edu">Scratch</a> and teaching myself HTML, JavaScript and CSS - those early experiments taught me iteration and systems thinking. I later completed technical school in 2025: <em>Informatikai rendszer- és alkalmazás üzemeltető technikus</em> (vocational diploma - IT Systems & Applications Operations Technician), where I focused on system administration, networking and applied tooling. I also explored university coursework at Óbuda University (NIK), studying toward a BSc in Engineering Informatics, but chose to return to hands-on projects because I learn fastest by building and iterating in the real world.</p>
+        <p>My background mixes formal training with self-directed projects: home servers, small-scale networks, device repair, and automation that keeps services reliable without constant babysitting.</p>
+      </section>
+
+      <section>
+        <h3>What I work on</h3>
+        <p>My practical focus is backend and systems work: service orchestration, game-server hosting, and small services and bridges (for example, Discord integrations). I also do hardware-level tinkering - Raspberry Pi/Arduino projects, maintenance and repair when it makes sense.</p>
+      </section>
+
+      <section>
+        <h3>Project highlights</h3>
+        <div class="project">
+          <h4>Home-server orchestration</h4>
+          <p>I run and maintain a multi-service home server that hosts game instances, bots and personal projects. I focus on reproducible deployment and monitoring so services stay online with minimal intervention. <a href="projects.html">More projects</a></p>
+        </div>
+        <div class="project">
+          <h4>Discord bridge & automation</h4>
+          <p>Small tooling that connects services and automates routine tasks - status bridges, alerts and lightweight bots. These are practical tools: small, well-logged, and designed to fail gracefully.</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Outside of work</h3>
+        <p>I prefer solo hobbies where I can practice, iterate and be better than yesterday. I’m into pixel art and DJ mixing - both satisfy the same systems-oriented part of my brain: constraints, iteration and pattern. I enjoy exploring other hobbies that fit that mindset and am always trying new things to see what clicks.</p>
+      </section>
+
+      <section>
+        <h3>Personality (INTJ‑T)</h3>
+        <p>I identify as INTJ‑T. In practical terms that means I’m strategic, analytical and private by default, though I’m friendly and I try my best in social interactions. I prefer written, specific communication and clear goals over vague discussion. Strengths include systems thinking, long-term planning, and a focus on efficient, reliable solutions. I can sometimes come across as blunt or skip formalities, but I aim to be considerate and clear in collaboration.</p>
+      </section>
+
+      <section>
+        <h3>Values</h3>
+        <p>I support the right-to-repair movement and follow creators like Salem Techsperts - practical repair and preservation matter to me. I value competence, autonomy and tools that empower sustained use over disposable convenience.</p>
+      </section>
+
+      
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year2"></span> martinf77</div>
+  </footer>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

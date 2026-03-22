@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery - martinf77</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Gallery</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Pixel art</h2>
+      <p class="muted note">Little experiments - stuff I make for fun. I use Libresprite for my sprites</p>
+
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/gallery/amethyst-post.gif" alt="amethyst pixel art">
+          <figcaption>amethyst</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/gallery/book-post.gif" alt="book pixel art">
+          <figcaption>book</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/gallery/bundle-post.gif" alt="bundle pixel art">
+          <figcaption>bundle</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/gallery/eyebat-post.gif" alt="eyebat pixel art">
+          <figcaption>eyebat</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/gallery/quartz-post.gif" alt="quartz pixel art">
+          <figcaption>quartz</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/gallery/red-mushroom-post.gif" alt="red mushroom pixel art">
+          <figcaption>red mushroom</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/gallery/slime1-post.gif" alt="slime pixel art">
+          <figcaption>slime</figcaption>
+        </figure>
+      </div>
+
+      
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year5"></span> martinf77</div>
+  </footer>
+  <script>
+    document.getElementById('year5').textContent = new Date().getFullYear();
+
+    (function(){
+      var SCALE = 4; // desired scale relative to original media size
+      var grid = document.querySelector('.gallery-grid');
+      if (!grid) return;
+      function processFigure(fig){
+        var media = fig.querySelector('img,video');
+        if (!media) return;
+        function applySizing(nw, nh){
+          // container width available for gallery (approx)
+          var maxW = Math.max(120, grid.clientWidth - 24);
+          var desired = nw * SCALE;
+          var finalScale = SCALE;
+          if (desired > maxW) {
+            var fit = Math.floor(maxW / Math.max(1, nw));
+            finalScale = Math.max(1, Math.min(SCALE, fit));
+          }
+          media.style.width = nw + 'px';
+          media.style.height = 'auto';
+          media.style.transform = 'scale(' + finalScale + ')';
+          media.style.transformOrigin = 'top left';
+          fig.style.width = (nw * finalScale + 16) + 'px'; // include padding
+          fig.style.height = (nh * finalScale + 40) + 'px';
+        }
+
+        if (media.tagName.toLowerCase() === 'img'){
+          if (media.complete && media.naturalWidth) {
+            applySizing(media.naturalWidth, media.naturalHeight);
+          } else {
+            media.addEventListener('load', function(){
+              applySizing(media.naturalWidth, media.naturalHeight);
+            });
+          }
+        } else if (media.tagName.toLowerCase() === 'video'){
+          if (media.videoWidth) {
+            applySizing(media.videoWidth, media.videoHeight);
+          } else {
+            media.addEventListener('loadedmetadata', function(){
+              applySizing(media.videoWidth, media.videoHeight);
+            });
+          }
+        }
+      }
+
+      // process existing figures
+      var figs = grid.querySelectorAll('figure');
+      figs.forEach(processFigure);
+
+      // re-run on resize to adjust fit
+      var resizeTimeout;
+      window.addEventListener('resize', function(){
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function(){
+          figs.forEach(processFigure);
+        }, 150);
+      });
+    })();
+  </script>
+</body>
+</html>

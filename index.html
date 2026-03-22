@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home - martinf77</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Home</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Hi - I’m Martin.</h2>
+      <p class="tagline">Tech-savvy and hands-on: I build practical tools, automate repetitive tasks, and keep projects moving across software and hardware. When I’m not fixing things, I tinker with pixel art and hardware projects.</p>
+      <p><a class="cta" href="projects.html">See what I build</a></p>
+    </section>
+
+    <section>
+      <h2>Highlights</h2>
+      <ul class="projects-list">
+        <li>
+          <h3 class="project-title"><a href="https://grantargo.hu" target="_blank" rel="noopener noreferrer">Grantargó Kft. - Website development</a></h3>
+          <p class="project-desc">Designed and implemented the corporate website: layout, responsive styles, and deployment pipelines to keep the site fast and maintainable.</p>
+          <div class="project-meta muted small">HTML • CSS • Responsive • Deployment - <span class="status-pill status-live">live</span></div>
+        </li>
+
+        <li>
+          <h3 class="project-title">C# GUI - Worktime document generator (Windows)</h3>
+          <p class="project-desc">A small Windows tool that automates worktime document creation by querying calendar/holiday APIs and producing formatted outputs for reporting.</p>
+          <div class="project-meta muted small">C# • WinForms/WPF • API • Automation - <span class="status-pill status-tooling">tooling</span></div>
+        </li>
+
+        <li>
+          <h3 class="project-title">Systems & Automation</h3>
+          <p class="project-desc">Infrastructure work: orchestration, monitoring and small automation pieces that reduce manual intervention and improve reliability.</p>
+          <div class="project-meta muted small">Orchestration • Monitoring • Automation - <span class="status-pill status-operational">operational</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Gallery preview</h2>
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/gallery/amethyst-post.gif" alt="amethyst pixel art">
+          <figcaption>amethyst</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/gallery/eyebat-post.gif" alt="eyebat pixel art">
+          <figcaption>eyebat</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/gallery/red-mushroom-post.gif" alt="red mushroom pixel art">
+          <figcaption>red mushroom</figcaption>
+        </figure>
+      </div>
+      <p><a href="gallery.html">View full gallery</a></p>
+    </section>
+
+    <section>
+      <h2>About</h2>
+      <p>I prefer solutions that are reliable day-to-day: clear, repeatable processes and small tools that solve problems without adding overhead. <a href="about.html">Read more</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year1"></span> martinf77</div>
+  </footer>
+
+  <script>document.getElementById('year1').textContent = new Date().getFullYear();</script>
+
+  <script>
+    (function(){
+      var SCALE = 4; // desired scale relative to original media size
+      var grid = document.querySelector('.gallery-grid');
+      if (!grid) return;
+      function processFigure(fig){
+        var media = fig.querySelector('img,video');
+        if (!media) return;
+        function applySizing(nw, nh){
+          var maxW = Math.max(120, grid.clientWidth - 24);
+          var desired = nw * SCALE;
+          var finalScale = SCALE;
+          if (desired > maxW) {
+            var fit = Math.floor(maxW / Math.max(1, nw));
+            finalScale = Math.max(1, Math.min(SCALE, fit));
+          }
+          media.style.width = nw + 'px';
+          media.style.height = 'auto';
+          media.style.transform = 'scale(' + finalScale + ')';
+          media.style.transformOrigin = 'top left';
+          fig.style.width = (nw * finalScale + 16) + 'px';
+          fig.style.height = (nh * finalScale + 40) + 'px';
+        }
+
+        if (media.tagName.toLowerCase() === 'img'){
+          if (media.complete && media.naturalWidth) {
+            applySizing(media.naturalWidth, media.naturalHeight);
+          } else {
+            media.addEventListener('load', function(){
+              applySizing(media.naturalWidth, media.naturalHeight);
+            });
+          }
+        } else if (media.tagName.toLowerCase() === 'video'){
+          if (media.videoWidth) {
+            applySizing(media.videoWidth, media.videoHeight);
+          } else {
+            media.addEventListener('loadedmetadata', function(){
+              applySizing(media.videoWidth, media.videoHeight);
+            });
+          }
+        }
+      }
+
+      var figs = grid.querySelectorAll('figure');
+      figs.forEach(processFigure);
+      var resizeTimeout;
+      window.addEventListener('resize', function(){
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function(){
+          figs.forEach(processFigure);
+        }, 150);
+      });
+    })();
+  </script>
+</body>
+</html>
