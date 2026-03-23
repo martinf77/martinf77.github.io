@@ -9,30 +9,36 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="site-title">Contact</h1>
+      <h1 class="site-title" data-i18n="title.contact">Contact</h1>
+      <div class="header-controls">
+        <select id="lang-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="hu">Magyar</option>
+        </select>
+      </div>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section>
-      <h2>Say hello</h2>
-      <p>Thanks for stopping by. Whether it's a commission, a collaboration, a question about my work, or just a friendly hello - I love hearing from people. The quickest way to reach me is via social DM; for formal requests or attachments, email is preferable. If you need to coordinate times, a call or text is fine.</p>
+      <h2 data-i18n="contact.title">Say hello</h2>
+      <p data-i18n="contact.intro">Thanks for stopping by. Whether it's a commission, a collaboration, a question about my work, or just a friendly hello - I love hearing from people. The quickest way to reach me is via social DM; for formal requests or attachments, email is preferable. If you need to coordinate times, a call or text is fine.</p>
 
-      <h3>Where to reach me</h3>
+      <h3 data-i18n="contact.where.title">Where to reach me</h3>
       <ul>
-        <li><strong>Primary (quick):</strong> Social DM - Instagram / Facebook</li>
-        <li><strong>Email (detailed):</strong> <a href="mailto:martinfodor77@gmail.com">martinfodor77@gmail.com</a></li>
-        <li><strong>Phone (scheduling):</strong> <a href="tel:+36308945461">+36 30 894 5461</a></li>
+        <li><strong data-i18n="contact.primary.label">Primary (quick):</strong> <span data-i18n="contact.primary.value">Social DM - Instagram / Facebook</span></li>
+        <li><strong data-i18n="contact.email.label">Email (detailed):</strong> <a href="mailto:martinfodor77@gmail.com">martinfodor77@gmail.com</a></li>
+        <li><strong data-i18n="contact.phone.label">Phone (scheduling):</strong> <a href="tel:+36308945461">+36 30 894 5461</a></li>
       </ul>
 
-      <h3>Profiles</h3>
+      <h3 data-i18n="contact.profiles.title">Profiles</h3>
       <ul>
         <li><a href="https://github.com/martinf77" target="_blank" rel="noopener">GitHub - martinf77</a></li>
         <li><a href="https://www.instagram.com/noones_soul/" target="_blank" rel="noopener">Instagram - @noones_soul</a></li>
@@ -45,5 +51,6 @@
     <div class="container">© <span id="year4"></span> martinf77</div>
   </footer>
   <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/site-i18n.js" defer></script>
 </body>
 </html>

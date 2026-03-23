@@ -1,0 +1,104 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About",
+  "nav.projects": "Projects",
+  "nav.gallery": "Gallery",
+  "nav.contact": "Contact",
+
+  "title.home": "Home",
+  "title.about": "About",
+  "title.projects": "Projects",
+  "title.gallery": "Gallery",
+  "title.contact": "Contact",
+
+  "hero.hi": "Hi - I’m Martin.",
+  "hero.tagline": "Tech-savvy and hands-on: I build practical tools, automate repetitive tasks, and keep projects moving across software and hardware. When I’m not fixing things, I tinker with pixel art and hardware projects.",
+  "cta.projects": "See what I build",
+
+  "highlights.title": "Highlights",
+
+  "gallery.preview": "Gallery preview",
+  "gallery.view": "View full gallery",
+  "gallery.pixelart": "Pixel art",
+  "gallery.note": "Little experiments - stuff I make for fun. I use Libresprite for my sprites",
+
+  "about.title": "About",
+  "about.intro": "I prefer solutions that are reliable day-to-day: clear, repeatable processes and small tools that solve problems without adding overhead.",
+  "about.readmore": "Read more",
+  "about.me.title": "About me",
+  "about.me.intro": "I keep systems running - servers, automation and small scripts that reduce manual work. I aim for reliable, maintainable solutions, favour clear logging and predictable behavior, and try to avoid unnecessary complexity.",
+  "about.journey.title": "Journey",
+  "about.journey.intro": "I started my IT journey in elementary school, making game projects on Scratch and teaching myself HTML, JavaScript and CSS. I later completed vocational studies and focused on system administration, networking and applied tooling.",
+  "about.work.title": "What I work on",
+  "about.work.intro": "My practical focus is backend and systems work: service orchestration, game-server hosting, and small services and bridges. I also do hardware-level tinkering.",
+  "about.highlights.title": "Project highlights",
+  "about.outside.title": "Outside of work",
+  "about.outside.intro": "I prefer solo hobbies where I can practice, iterate and be better than yesterday. I’m into pixel art and DJ mixing.",
+
+  "projects.title": "Work & projects",
+
+  "contact.title": "Say hello",
+  "contact.intro": "Thanks for stopping by. Whether it's a commission, a collaboration, a question about my work, or just a friendly hello - I love hearing from people.",
+  "contact.where.title": "Where to reach me",
+  "contact.primary.label": "Primary (quick):",
+  "contact.primary.value": "Social DM - Instagram / Facebook",
+  "contact.email.label": "Email (detailed):",
+  "contact.phone.label": "Phone (scheduling):",
+  "contact.profiles.title": "Profiles"
+,
+  "project.grantargo.title": "Grantargó Kft. - Website development",
+  "project.grantargo.desc": "Designed and implemented the corporate website: layout, responsive styles, and deployment pipelines to keep the site fast and maintainable.",
+
+  "project.worktime.title": "C# GUI - Worktime document generator (Windows)",
+  "project.worktime.desc": "A small Windows tool that automates worktime document creation by querying calendar/holiday APIs and producing formatted outputs for reporting.",
+
+  "project.sys.title": "Systems & Automation",
+  "project.sys.desc": "Infrastructure work: orchestration, monitoring and small automation pieces that reduce manual intervention and improve reliability.",
+
+  "project.chatbots.title": "Community chatbots - Discord",
+  "project.chatbots.desc": "Built and maintained chatbots for several small Discord communities, adding moderation, utility commands, and custom interactions.",
+
+  "project.network.title": "Network design & implementation (multi-site)",
+  "project.network.desc": "Planned and deployed a network for a fictional company across three buildings using Cisco routers/switches and mixed OS servers; reproduced in Packet Tracer and on real devices, with on-site and AWS EC2 components.",
+
+  "project.iot.title": "IoT projects - Arduino & Raspberry Pi",
+  "project.iot.desc": "Designed and built IoT devices for hobby and school projects using Arduino microcontrollers and Raspberry Pi modules for sensing, automation, and data logging.",
+
+  "project.gameserver.title": "Game server deployment - Minecraft Java",
+  "project.gameserver.desc": "Deployed and managed game servers with performance tuning, backups and plugin maintenance for multiplayer communities.",
+
+  "project.hardware.title": "Hardware diagnostics & maintenance",
+  "project.hardware.desc": "Diagnosed and repaired Android devices, laptops, and PCs; performed maintenance such as re-pasting CPUs, cleaning cooling systems, and component replacement.",
+
+  "project.support.title": "Community technical support & advice",
+  "project.support.desc": "Provided technical support and preventative guidance to small communities, resolving issues and reducing recurring problems through configuration and best practices.",
+
+  "project.teaching.title": "Teaching - microcontrollers & programming basics",
+  "project.teaching.desc": "Delivered lessons to younger learners on microcontrollers and programming fundamentals, creating hands-on exercises and simple projects.",
+
+  "status.live": "live",
+  "status.tooling": "tooling",
+  "status.ongoing": "ongoing",
+  "status.education": "education",
+  "status.experimental": "experimental",
+  "status.operational": "operational",
+  "status.consulting": "consulting",
+
+  "gallery.caption.amethyst": "amethyst",
+  "gallery.caption.book": "book",
+  "gallery.caption.bundle": "bundle",
+  "gallery.caption.eyebat": "eyebat",
+  "gallery.caption.quartz": "quartz",
+  "gallery.caption.red_mushroom": "red mushroom",
+  "gallery.caption.slime": "slime",
+
+  "about.home_server.title": "Home-server orchestration",
+  "about.home_server.desc": "I run and maintain a multi-service home server that hosts game instances, bots and personal projects. I focus on reproducible deployment and monitoring so services stay online with minimal intervention. <a href=\"projects.html\">More projects</a>",
+  "about.discord.title": "Discord bridge & automation",
+  "about.discord.desc": "Small tooling that connects services and automates routine tasks - status bridges, alerts and lightweight bots. These are practical tools: small, well-logged, and designed to fail gracefully.",
+
+  "about.personality.title": "Personality (INTJ‑T)",
+  "about.personality.desc": "I identify as INTJ‑T. In practical terms that means I’m strategic, analytical and private by default, though I’m friendly and I try my best in social interactions. I prefer written, specific communication and clear goals over vague discussion. Strengths include systems thinking, long-term planning, and a focus on efficient, reliable solutions. I can sometimes come across as blunt or skip formalities, but I aim to be considerate and clear in collaboration.",
+  "about.values.title": "Values",
+  "about.values.desc": "I support the right-to-repair movement and follow creators like Salem Techsperts - practical repair and preservation matter to me. I value competence, autonomy and tools that empower sustained use over disposable convenience."
+}

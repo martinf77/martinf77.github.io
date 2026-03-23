@@ -9,49 +9,55 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="site-title">Home</h1>
+      <h1 class="site-title" data-i18n="title.home">Home</h1>
+      <div class="header-controls">
+        <select id="lang-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="hu">Magyar</option>
+        </select>
+      </div>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
-      <h2>Hi - I’m Martin.</h2>
-      <p class="tagline">Tech-savvy and hands-on: I build practical tools, automate repetitive tasks, and keep projects moving across software and hardware. When I’m not fixing things, I tinker with pixel art and hardware projects.</p>
-      <p><a class="cta" href="projects.html">See what I build</a></p>
+      <h2 data-i18n="hero.hi">Hi - I’m Martin.</h2>
+      <p class="tagline" data-i18n="hero.tagline">Tech-savvy and hands-on: I build practical tools, automate repetitive tasks, and keep projects moving across software and hardware. When I’m not fixing things, I tinker with pixel art and hardware projects.</p>
+      <p><a class="cta" href="projects.html" data-i18n="cta.projects">See what I build</a></p>
     </section>
 
     <section>
-      <h2>Highlights</h2>
+      <h2 data-i18n="highlights.title">Highlights</h2>
       <ul class="projects-list">
         <li>
-          <h3 class="project-title"><a href="https://grantargo.hu" target="_blank" rel="noopener noreferrer">Grantargó Kft. - Website development</a></h3>
-          <p class="project-desc">Designed and implemented the corporate website: layout, responsive styles, and deployment pipelines to keep the site fast and maintainable.</p>
-          <div class="project-meta muted small">HTML • CSS • Responsive • Deployment - <span class="status-pill status-live">live</span></div>
+          <h3 class="project-title"><a href="https://grantargo.hu" target="_blank" rel="noopener noreferrer" data-i18n="project.grantargo.title">Grantargó Kft. - Website development</a></h3>
+          <p class="project-desc" data-i18n="project.grantargo.desc">Designed and implemented the corporate website: layout, responsive styles, and deployment pipelines to keep the site fast and maintainable.</p>
+          <div class="project-meta muted small">HTML • CSS • Responsive • Deployment - <span class="status-pill status-live" data-i18n="status.live">live</span></div>
         </li>
 
         <li>
-          <h3 class="project-title">C# GUI - Worktime document generator (Windows)</h3>
-          <p class="project-desc">A small Windows tool that automates worktime document creation by querying calendar/holiday APIs and producing formatted outputs for reporting.</p>
-          <div class="project-meta muted small">C# • WinForms/WPF • API • Automation - <span class="status-pill status-tooling">tooling</span></div>
+          <h3 class="project-title" data-i18n="project.worktime.title">C# GUI - Worktime document generator (Windows)</h3>
+          <p class="project-desc" data-i18n="project.worktime.desc">A small Windows tool that automates worktime document creation by querying calendar/holiday APIs and producing formatted outputs for reporting.</p>
+          <div class="project-meta muted small">C# • WinForms/WPF • API • Automation - <span class="status-pill status-tooling" data-i18n="status.tooling">tooling</span></div>
         </li>
 
         <li>
-          <h3 class="project-title">Systems & Automation</h3>
-          <p class="project-desc">Infrastructure work: orchestration, monitoring and small automation pieces that reduce manual intervention and improve reliability.</p>
-          <div class="project-meta muted small">Orchestration • Monitoring • Automation - <span class="status-pill status-operational">operational</span></div>
+          <h3 class="project-title" data-i18n="project.sys.title">Systems & Automation</h3>
+          <p class="project-desc" data-i18n="project.sys.desc">Infrastructure work: orchestration, monitoring and small automation pieces that reduce manual intervention and improve reliability.</p>
+          <div class="project-meta muted small">Orchestration • Monitoring • Automation - <span class="status-pill status-operational" data-i18n="status.operational">operational</span></div>
         </li>
       </ul>
     </section>
 
     <section>
-      <h2>Gallery preview</h2>
+      <h2 data-i18n="gallery.preview">Gallery preview</h2>
       <div class="gallery-grid">
         <figure>
           <img src="images/gallery/amethyst-post.gif" alt="amethyst pixel art">
@@ -68,12 +74,12 @@
           <figcaption>red mushroom</figcaption>
         </figure>
       </div>
-      <p><a href="gallery.html">View full gallery</a></p>
+      <p><a href="gallery.html" data-i18n="gallery.view">View full gallery</a></p>
     </section>
 
     <section>
-      <h2>About</h2>
-      <p>I prefer solutions that are reliable day-to-day: clear, repeatable processes and small tools that solve problems without adding overhead. <a href="about.html">Read more</a></p>
+      <h2 data-i18n="about.title">About</h2>
+      <p data-i18n="about.intro">I prefer solutions that are reliable day-to-day: clear, repeatable processes and small tools that solve problems without adding overhead. <a href="about.html" data-i18n="about.readmore">Read more</a></p>
     </section>
   </main>
 
@@ -137,5 +143,6 @@
       });
     })();
   </script>
+  <script src="assets/js/site-i18n.js" defer></script>
 </body>
 </html>

@@ -19,6 +19,9 @@ body{margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:v
 .site-header{border-bottom:1px solid rgba(255,255,255,0.04);}
 .site-header .container{display:flex;align-items:center;justify-content:space-between}
 .site-title{margin:0;font-size:1.25rem}
+.header-controls{margin-left:12px;margin-right:12px}
+.header-controls #lang-select{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,0.04);padding:6px 8px;border-radius:6px}
+.header-controls #lang-select:focus{outline:2px solid rgba(125,211,252,0.18);}
 .site-header nav a{color:var(--link);text-decoration:none;margin-left:16px}
 .site-header nav a:hover{color:var(--text)}
 .hero{padding:48px 0}

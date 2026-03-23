@@ -1,0 +1,104 @@
+{
+  "nav.home": "Főoldal",
+  "nav.about": "Rólam",
+  "nav.projects": "Projektek",
+  "nav.gallery": "Galéria",
+  "nav.contact": "Kapcsolat",
+
+  "title.home": "Főoldal",
+  "title.about": "Rólam",
+  "title.projects": "Projektek",
+  "title.gallery": "Galéria",
+  "title.contact": "Kapcsolat",
+
+  "hero.hi": "Szia - Martin vagyok.",
+  "hero.tagline": "Tech affinitással és gyakorlati szemlélettel dolgozom: hasznos eszközöket építek, automatizálom ismétlődő feladatokat, érdekelnek a szoftveres és hardveres megoldások egyaránt.",
+  "cta.projects": "Projektjeim",
+
+  "highlights.title": "Kiemelt projektek",
+
+  "gallery.preview": "Galéria - előnézet",
+  "gallery.view": "Teljes galéria megtekintése",
+  "gallery.pixelart": "Pixel art",
+  "gallery.note": "Kis kísérletek - amit szórakozásból készítek. Libresprite-t használok a rajzokhoz.",
+
+  "about.title": "Rólam",
+  "about.intro": "Olyan megoldásokat szeretek, amelyek nap mint nap megbízhatóan működnek: egyszerű, ismételhető folyamatok bonyodalmak nélkül.",
+  "about.readmore": "Bővebben",
+  "about.me.title": "Rólam",
+  "about.me.intro": "Rendszerek üzemeltetése a fő területem: szerverek, automatizálás és kis szkriptek, amelyek kiváltják a kézi munkát. A megbízhatóság és a karbantarthatóság fontos számomra.",
+  "about.journey.title": "Utam",
+  "about.journey.intro": "Informatikai utam általános iskolás koromban Scratch-projektekkel indult; nem sokra rá HTML-t, JavaScriptet és CSS-t tanultam kíváncsiságból. Később szakirányú képzést végeztem rendszergazdai és hálózati területen.",
+  "about.work.title": "Mivel foglalkozom",
+  "about.work.intro": "Főként backend és rendszerek: szolgáltatások, játékszerverek üzemeltetése és fejlesztése. Emellett hobbiprojektekkel foglalkozom.",
+  "about.highlights.title": "Kiemelt projektek",
+  "about.outside.title": "Munka mellett",
+  "about.outside.intro": "Egyéni hobbikat űzök, ahol fejlődhetek: pixel art és DJ-mixelés jó példák.",
+
+  "projects.title": "Projektek",
+
+  "contact.title": "Lépj kapcsolatba",
+  "contact.intro": "Köszi, hogy benéztél - ha szeretnél kapcsolatba lépni velem, írj nyugodtan.",
+  "contact.where.title": "Hol érsz el",
+  "contact.primary.label": "Elsődleges:",
+  "contact.primary.value": "Üzenet a közösségi oldalakon - Instagram / Facebook",
+  "contact.email.label": "E-mail:",
+  "contact.phone.label": "Telefon:",
+  "contact.profiles.title": "Profilok"
+,
+  "project.grantargo.title": "Grantargó Kft. - Weboldal fejlesztés",
+  "project.grantargo.desc": "Megterveztem és elkészítettem a cég weboldalát: elrendezés, reszponzivitás.",
+
+  "project.worktime.title": "C# GUI - Munkaidő dokumentum generátor (Windows)",
+  "project.worktime.desc": "Egy kis Windowsos eszköz, ami automatizálja a munkaidő-dokumentumok készítését naptár/ünnepnap API-k segítségével.",
+
+  "project.sys.title": "Rendszerek és automatizálás",
+  "project.sys.desc": "Infrastruktúra: monitorozás és kis automatizációk, amelyek csökkentik a kézi munkát és növelik a megbízhatóságot.",
+
+  "project.chatbots.title": "Közösségi chatbotok - Discord",
+  "project.chatbots.desc": "Chatbotok fejlesztése és üzemeltetése kisebb Discord-közösségeknek: moderáció, hasznos parancsok és testreszabott interakciók.",
+
+  "project.network.title": "Hálózattervezés és kiépítés (több telephely)",
+  "project.network.desc": "Hálózattervezés több telephelyre Cisco eszközökkel és vegyes szerverparkkal; reprodukálva Packet Tracer-ben, majd valós környezetben, AWS EC2-vel keverve.",
+
+  "project.iot.title": "IoT projektek - Arduino & Raspberry Pi",
+  "project.iot.desc": "IoT-eszközök tervezése hobbi/suli projektekhez Arduino és Raspberry Pi használatával: mérés, automatizálás és adatgyűjtés.",
+
+  "project.gameserver.title": "Játékszerver üzemeltetés - Minecraft Java",
+  "project.gameserver.desc": "Játékszerverek telepítése és üzemeltetése: teljesítményhangolás, mentések és plugin-kezelés többjátékos közösségeknek.",
+
+  "project.hardware.title": "Hardverdiagnosztika és karbantartás",
+  "project.hardware.desc": "Android eszközök, laptopok és PC-k diagnosztikája és javítása: hőpaszta csere, hűtőrendszer tisztítás és alkatrészcserék.",
+
+  "project.support.title": "Közösségi technikai támogatás és tanács",
+  "project.support.desc": "Technikai támogatás és probléma megelőző tanácsadás kis közösségeknek: problémamegoldás és ismétlődő hibák megszűntetése.",
+
+  "project.teaching.title": "Oktatás - mikrovezérlők és programozás alapjai",
+  "project.teaching.desc": "Gyakorlati foglalkozások fiataloknak mikrovezérlőkről és programozás alapjairól.",
+
+  "status.live": "élő",
+  "status.tooling": "tooling",
+  "status.ongoing": "folyamatban",
+  "status.education": "tanulmányi",
+  "status.experimental": "kísérleti",
+  "status.operational": "üzemeltetés",
+  "status.consulting": "tanács",
+
+  "gallery.caption.amethyst": "amethyst",
+  "gallery.caption.book": "book",
+  "gallery.caption.bundle": "bundle",
+  "gallery.caption.eyebat": "eyebat",
+  "gallery.caption.quartz": "quartz",
+  "gallery.caption.red_mushroom": "red mushroom",
+  "gallery.caption.slime": "slime",
+
+  "about.home_server.title": "Otthoni szerver üzemeltetés",
+  "about.home_server.desc": "Üzemeltetek egy otthoni szervert több szolgáltatással (játékszerverek, botok, személyes projektek). Figyelem a reprodukálhatóságot és a monitorozást, hogy minél kevesebb felügyeletre legyen szükség. <a href=\"projects.html\">További projektek</a>",
+  "about.discord.title": "Discord bridge & automatizálás",
+  "about.discord.desc": "Kis eszközök, amelyek összekötnek szolgáltatásokat és automatizálnak rutinfeladatokat - értesítések és botok. Gyakorlati, jól naplózott megoldások.",
+
+  "about.personality.title": "Személyiség (INTJ‑T)",
+  "about.personality.desc": "INTJ‑T vagyok: stratégista, elemző és alapvetően visszafogott, de barátságos. Szeretem a konkrét, írásos kommunikációt és a célorientált feladatokat.",
+  "about.values.title": "Elveim",
+  "about.values.desc": "Támogatom a javításhoz való jogot (right-to-repair) és követek gyakorlati javítással foglalkozó alkotókat. Fontos számomra a szakértelem és az olyan eszközök támogatása, amik hosszú távon használhatók."
+}

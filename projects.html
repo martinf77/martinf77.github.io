@@ -9,67 +9,73 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="site-title">Projects</h1>
+      <h1 class="site-title" data-i18n="title.projects">Projects</h1>
+      <div class="header-controls">
+        <select id="lang-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="hu">Magyar</option>
+        </select>
+      </div>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section>
-      <h2>Work & projects</h2>
+      <h2 data-i18n="projects.title">Work & projects</h2>
       <ul class="projects-list">
         <li>
-          <h3 class="project-title"><a href="https://grantargo.hu" target="_blank" rel="noopener noreferrer">Grantargó Kft. - Website development</a></h3>
-          <p class="project-desc">Designed and implemented the corporate website for Grantargó Kft., responsible for layout, responsive design, and deployment.</p>
-          <div class="project-meta muted small">HTML • CSS • Responsive • Deployment - <span class="status-pill status-live">live</span></div>
+          <h3 class="project-title"><a href="https://grantargo.hu" target="_blank" rel="noopener noreferrer" data-i18n="project.grantargo.title">Grantargó Kft. - Website development</a></h3>
+          <p class="project-desc" data-i18n="project.grantargo.desc">Designed and implemented the corporate website for Grantargó Kft., responsible for layout, responsive design, and deployment.</p>
+          <div class="project-meta muted small">HTML • CSS • Responsive • Deployment - <span class="status-pill status-live" data-i18n="status.live">live</span></div>
         </li>
 
         <li>
-          <h3 class="project-title">Community chatbots - Discord</h3>
-          <p class="project-desc">Built and maintained chatbots for several small Discord communities, adding moderation, utility commands, and custom interactions.</p>
-          <div class="project-meta muted small">Node.js / Python • Discord • Bots - <span class="status-pill status-ongoing">ongoing</span></div>
+          <h3 class="project-title" data-i18n="project.chatbots.title">Community chatbots - Discord</h3>
+          <p class="project-desc" data-i18n="project.chatbots.desc">Built and maintained chatbots for several small Discord communities, adding moderation, utility commands, and custom interactions.</p>
+          <div class="project-meta muted small">Node.js / Python • Discord • Bots - <span class="status-pill status-ongoing" data-i18n="status.ongoing">ongoing</span></div>
         </li>
 
         <li>
-          <h3 class="project-title">Network design & implementation (multi-site)</h3>
-          <p class="project-desc">Planned and deployed a network for a fictional company across three buildings using Cisco routers/switches and mixed OS servers; reproduced in Packet Tracer and on real devices, with on-site and AWS EC2 components.</p>
-          <div class="project-meta muted small">Cisco • Packet Tracer • AWS EC2 • Ubuntu/Windows - <span class="status-pill status-education">education</span></div>
+          <h3 class="project-title" data-i18n="project.network.title">Network design & implementation (multi-site)</h3>
+          <p class="project-desc" data-i18n="project.network.desc">Planned and deployed a network for a fictional company across three buildings using Cisco routers/switches and mixed OS servers; reproduced in Packet Tracer and on real devices, with on-site and AWS EC2 components.</p>
+          <div class="project-meta muted small">Cisco • Packet Tracer • AWS EC2 • Ubuntu/Windows - <span class="status-pill status-education" data-i18n="status.education">education</span></div>
         </li>
 
         <li>
-          <h3 class="project-title">IoT projects - Arduino & Raspberry Pi</h3>
-          <p class="project-desc">Designed and built IoT devices for hobby and school projects using Arduino microcontrollers and Raspberry Pi modules for sensing, automation, and data logging.</p>
-          <div class="project-meta muted small">Arduino • Raspberry Pi • Sensors • Embedded - <span class="status-pill status-experimental">experimental</span></div>
+          <h3 class="project-title" data-i18n="project.iot.title">IoT projects - Arduino & Raspberry Pi</h3>
+          <p class="project-desc" data-i18n="project.iot.desc">Designed and built IoT devices for hobby and school projects using Arduino microcontrollers and Raspberry Pi modules for sensing, automation, and data logging.</p>
+          <div class="project-meta muted small">Arduino • Raspberry Pi • Sensors • Embedded - <span class="status-pill status-experimental" data-i18n="status.experimental">experimental</span></div>
         </li>
 
         <li>
-          <h3 class="project-title">Game server deployment - Minecraft Java</h3>
-          <p class="project-desc">Deployed and managed game servers with performance tuning, backups and plugin maintenance for multiplayer communities.</p>
-          <div class="project-meta muted small">Linux • Minecraft Java • Server Ops - <span class="status-pill status-operational">operational</span></div>
+          <h3 class="project-title" data-i18n="project.gameserver.title">Game server deployment - Minecraft Java</h3>
+          <p class="project-desc" data-i18n="project.gameserver.desc">Deployed and managed game servers with performance tuning, backups and plugin maintenance for multiplayer communities.</p>
+          <div class="project-meta muted small">Linux • Minecraft Java • Server Ops - <span class="status-pill status-operational" data-i18n="status.operational">operational</span></div>
         </li>
 
         <li>
-          <h3 class="project-title">Hardware diagnostics & maintenance</h3>
-          <p class="project-desc">Diagnosed and repaired Android devices, laptops, and PCs; performed maintenance such as re-pasting CPUs, cleaning cooling systems, and component replacement.</p>
-          <div class="project-meta muted small">Diagnostics • Repair • Maintenance - <span class="status-pill status-consulting">consulting</span></div>
+          <h3 class="project-title" data-i18n="project.hardware.title">Hardware diagnostics & maintenance</h3>
+          <p class="project-desc" data-i18n="project.hardware.desc">Diagnosed and repaired Android devices, laptops, and PCs; performed maintenance such as re-pasting CPUs, cleaning cooling systems, and component replacement.</p>
+          <div class="project-meta muted small">Diagnostics • Repair • Maintenance - <span class="status-pill status-consulting" data-i18n="status.consulting">consulting</span></div>
         </li>
 
         <li>
-          <h3 class="project-title">Community technical support & advice</h3>
-          <p class="project-desc">Provided technical support and preventative guidance to small communities, resolving issues and reducing recurring problems through configuration and best practices.</p>
-          <div class="project-meta muted small">Support • Troubleshooting • Documentation - <span class="status-pill status-ongoing">ongoing</span></div>
+          <h3 class="project-title" data-i18n="project.support.title">Community technical support & advice</h3>
+          <p class="project-desc" data-i18n="project.support.desc">Provided technical support and preventative guidance to small communities, resolving issues and reducing recurring problems through configuration and best practices.</p>
+          <div class="project-meta muted small">Support • Troubleshooting • Documentation - <span class="status-pill status-ongoing" data-i18n="status.ongoing">ongoing</span></div>
         </li>
 
         <li>
-          <h3 class="project-title">Teaching - microcontrollers & programming basics</h3>
-          <p class="project-desc">Delivered lessons to younger learners on microcontrollers and programming fundamentals, creating hands-on exercises and simple projects.</p>
-          <div class="project-meta muted small">Teaching • Curriculum • Workshops - <span class="status-pill status-education">education</span></div>
+          <h3 class="project-title" data-i18n="project.teaching.title">Teaching - microcontrollers & programming basics</h3>
+          <p class="project-desc" data-i18n="project.teaching.desc">Delivered lessons to younger learners on microcontrollers and programming fundamentals, creating hands-on exercises and simple projects.</p>
+          <div class="project-meta muted small">Teaching • Curriculum • Workshops - <span class="status-pill status-education" data-i18n="status.education">education</span></div>
         </li>
 
         <li>
@@ -87,5 +93,6 @@
     <div class="container">© <span id="year3"></span> martinf77</div>
   </footer>
   <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/site-i18n.js" defer></script>
 </body>
 </html>

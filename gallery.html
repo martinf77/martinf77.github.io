@@ -9,56 +9,62 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="site-title">Gallery</h1>
+      <h1 class="site-title" data-i18n="title.gallery">Gallery</h1>
+      <div class="header-controls">
+        <select id="lang-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="hu">Magyar</option>
+        </select>
+      </div>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section>
-      <h2>Pixel art</h2>
-      <p class="muted note">Little experiments - stuff I make for fun. I use Libresprite for my sprites</p>
+      <h2 data-i18n="gallery.pixelart">Pixel art</h2>
+      <p class="muted note" data-i18n="gallery.note">Little experiments - stuff I make for fun. I use Libresprite for my sprites</p>
 
       <div class="gallery-grid">
         <figure>
           <img src="images/gallery/amethyst-post.gif" alt="amethyst pixel art">
-          <figcaption>amethyst</figcaption>
+          <figcaption data-i18n="gallery.caption.amethyst">amethyst</figcaption>
         </figure>
 
         <figure>
           <img src="images/gallery/book-post.gif" alt="book pixel art">
-          <figcaption>book</figcaption>
+          <figcaption data-i18n="gallery.caption.book">book</figcaption>
         </figure>
 
         <figure>
           <img src="images/gallery/bundle-post.gif" alt="bundle pixel art">
-          <figcaption>bundle</figcaption>
+          <figcaption data-i18n="gallery.caption.bundle">bundle</figcaption>
         </figure>
 
         <figure>
           <img src="images/gallery/eyebat-post.gif" alt="eyebat pixel art">
-          <figcaption>eyebat</figcaption>
+          <figcaption data-i18n="gallery.caption.eyebat">eyebat</figcaption>
         </figure>
 
         <figure>
           <img src="images/gallery/quartz-post.gif" alt="quartz pixel art">
-          <figcaption>quartz</figcaption>
+          <figcaption data-i18n="gallery.caption.quartz">quartz</figcaption>
         </figure>
 
         <figure>
           <img src="images/gallery/red-mushroom-post.gif" alt="red mushroom pixel art">
-          <figcaption>red mushroom</figcaption>
+          <figcaption data-i18n="gallery.caption.red_mushroom">red mushroom</figcaption>
         </figure>
 
         <figure>
           <img src="images/gallery/slime1-post.gif" alt="slime pixel art">
-          <figcaption>slime</figcaption>
+          <figcaption data-i18n="gallery.caption.slime">slime</figcaption>
         </figure>
       </div>
 
@@ -129,5 +135,6 @@
       });
     })();
   </script>
+  <script src="assets/js/site-i18n.js" defer></script>
 </body>
 </html>
