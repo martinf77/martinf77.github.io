@@ -94,7 +94,7 @@
   "gallery.caption.slime": "slime",
 
   "about.home_server.title": "Otthoni szerver üzemeltetés",
-  "about.home_server.desc": "Üzemeltetek egy otthoni szervert több szolgáltatással (játékszerverek, botok, személyes projektek). Figyelem a reprodukálhatóságot és a monitorozást, hogy minél kevesebb felügyeletre legyen szükség. <a href=\"projects.html\">További projektek</a>",
+  "about.home_server.desc": "Üzemeltetek egy otthoni szervert több szolgáltatással (játékszerverek, botok, személyes projektek). Figyelem a reprodukálhatóságot és a monitorozást, hogy minél kevesebb felügyeletre legyen szükség.",
   "about.discord.title": "Discord bridge & automatizálás",
   "about.discord.desc": "Kis eszközök, amelyek összekötnek szolgáltatásokat és automatizálnak rutinfeladatokat - értesítések és botok. Gyakorlati, jól naplózott megoldások.",
 
