@@ -29,6 +29,7 @@
   "about.me.intro": "I keep systems running - servers, automation and small scripts that reduce manual work. I aim for reliable, maintainable solutions, favour clear logging and predictable behavior, and try to avoid unnecessary complexity.",
   "about.journey.title": "Journey",
   "about.journey.intro": "I started my IT journey in elementary school, making game projects on Scratch and teaching myself HTML, JavaScript and CSS. I later completed vocational studies and focused on system administration, networking and applied tooling.",
+  "about.journey.outro": "My background mixes formal training with self-directed projects: home servers, small-scale networks, device repair, and automation that keeps services reliable without constant babysitting.",
   "about.work.title": "What I work on",
   "about.work.intro": "My practical focus is backend and systems work: service orchestration, game-server hosting, and small services and bridges. I also do hardware-level tinkering.",
   "about.highlights.title": "Project highlights",
