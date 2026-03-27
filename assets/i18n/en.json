@@ -94,7 +94,7 @@
   "gallery.caption.slime": "slime",
 
   "about.home_server.title": "Home-server orchestration",
-  "about.home_server.desc": "I run and maintain a multi-service home server that hosts game instances, bots and personal projects. I focus on reproducible deployment and monitoring so services stay online with minimal intervention.>",
+  "about.home_server.desc": "I run and maintain a multi-service home server that hosts game instances, bots and personal projects. I focus on reproducible deployment and monitoring so services stay online with minimal intervention.",
   "about.discord.title": "Discord bridge & automation",
   "about.discord.desc": "Small tooling that connects services and automates routine tasks - status bridges, alerts and lightweight bots. These are practical tools: small, well-logged, and designed to fail gracefully.",
 
