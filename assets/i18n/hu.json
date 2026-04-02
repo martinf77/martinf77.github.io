@@ -12,7 +12,7 @@
   "title.contact": "Kapcsolat",
 
   "hero.hi": "Szia - Martin vagyok.",
-  "hero.tagline": "Gyakorlatias, tech iránt érdeklődő vagyok: szeretek hasznos dolgokat építeni, automatizálni az ismétlődő feladatokat, és szoftverrel meg hardverrel egyaránt foglalkozni. Amikor épp nem javítok valamit, pixel arttal és hardveres projektekkel kísérletezem.",
+  "hero.tagline": "Gyakorlatias megközelítés, technológiai érdeklődés jellemez: szeretek hasznos dolgokat építeni, automatizálni az ismétlődő feladatokat, és szoftverrel meg hardverrel egyaránt foglalkozni. Amikor épp nem javítok valamit, pixel arttal és hardveres projektekkel kísérletezem.",
   "cta.projects": "Projektjeim",
 
   "highlights.title": "Kiemelt projektek",
@@ -34,7 +34,7 @@
   "about.work.intro": "Főként backend és rendszerek: szolgáltatások, játékszerverek üzemeltetése és fejlesztése. Emellett hobbiprojektekkel foglalkozom.",
   "about.highlights.title": "Kiemelt projektek",
   "about.outside.title": "Munka mellett",
-  "about.outside.intro": "Egyéni hobbikat űzök, ahol fejlődhetek: pixel art és DJ-mixelés jó példák.",
+  "about.outside.intro": "Egyéni hobbikat űzök, ahol fejlődhetek: pixel art és DJ-mixelés.",
 
   "projects.title": "Projektek",
 
@@ -51,7 +51,7 @@
   "project.grantargo.desc": "Megterveztem és elkészítettem a cég weboldalát: elrendezés, reszponzivitás.",
 
   "project.worktime.title": "C# GUI - Munkaidő dokumentum generátor (Windows)",
-  "project.worktime.desc": "Egy kis Windowsos eszköz, ami automatizálja a munkaidő-dokumentumok készítését naptár/ünnepnap API-k segítségével.",
+  "project.worktime.desc": "Egy kis Windows-os eszköz, ami automatizálja a munkaidő-dokumentumok készítését naptár/ünnepnap API-k segítségével.",
 
   "project.sys.title": "Rendszerek és automatizálás",
   "project.sys.desc": "Infrastruktúra: monitorozás és kis automatizációk, amelyek csökkentik a kézi munkát és növelik a megbízhatóságot.",
@@ -72,7 +72,7 @@
   "project.hardware.desc": "Android eszközök, laptopok és PC-k diagnosztikája és javítása: hőpaszta csere, hűtőrendszer tisztítás és alkatrészcserék.",
 
   "project.support.title": "Közösségi technikai támogatás és tanács",
-  "project.support.desc": "Technikai támogatás és probléma megelőző tanácsadás kis közösségeknek: problémamegoldás és ismétlődő hibák megszűntetése.",
+  "project.support.desc": "Technikai támogatás és probléma megelőző tanácsadás kis közösségeknek: problémamegoldás és ismétlődő hibák megszüntetése.",
 
   "project.teaching.title": "Oktatás - mikrovezérlők és programozás alapjai",
   "project.teaching.desc": "Gyakorlati foglalkozások fiataloknak mikrovezérlőkről és programozás alapjairól.",
