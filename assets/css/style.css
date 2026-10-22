@@ -1,8 +1,8 @@
 /* Dark theme minimal styles */
 
 :root {
-  --bg: #0b0f12;
-  --card: #121019;
+  --bg: #0b0710;
+  --card: #130d1b;
   --muted: #aab3b8;
   --accent: #b98aff;
   --link: #b98aff;
@@ -10,7 +10,7 @@
   --text: #e6eef2;
 
   --violet: #8006fd;
-  --violet-dark: #140b20;
+  --violet-dark: #1b1028;
   --violet-border: rgba(128, 6, 253, 0.25);
   --violet-glow: rgba(128, 6, 253, 0.18);
 }
@@ -53,7 +53,7 @@ body{margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:v
 @media (max-width:600px){.site-header .container{flex-direction:column;align-items:flex-start}.site-header nav{margin-top:8px}.hero h2{font-size:1.5rem}}
 
 /* system / log styles */
-.sysbox{background:#100b19;border:1px solid rgba(255,255,255,0.03);padding:14px;border-radius:8px;margin:18px 0;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,monospace}
+.sysbox{background: var(--violet-dark);border:1px solid rgba(255,255,255,0.03);padding:14px;border-radius:8px;margin:18px 0;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,monospace}
 .sysmeta{color:var(--muted);font-size:0.95rem;margin-bottom:8px}
 .syslog{background:#04060a;color:#d8c9ed;padding:12px;border-radius:6px;overflow:auto;max-height:160px;font-size:0.85rem}
 .note{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:10px;border-radius:6px;margin-top:10px}
